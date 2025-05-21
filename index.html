@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Oldagram</title>
-</head>
-<body>
-    <img src="images/logo.png">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/logo.png" />
+      <img class="avatar" src="images/user-avatar.png" />
+    </header>
+
+    <section class="post-content">
+      <div class="post-author">
+        <img class="avatar" src="images/avatar-vangogh.jpg" alt="" />
+        <div class="post-author-details">
+          <p class="author-name">Vincent van Gogh</p>
+          <p class="author-location">Zundert, Netherlands</p>
+        </div>
+      </div>
+
+      <div class="post-img">
+        <img src="images/post-vangogh.jpg" alt="" class="post-image" />
+      </div>
+
+      <div class="post-body">
+        <div class="post-actions">
+          <img src="/images/icon-heart.png" alt="" />
+          <img src="/images/icon-comment.png" alt="" />
+          <img src="/images/icon-dm.png" alt="" />
+        </div>
+        <div class="post-metrics">
+          <p>21,492 likes</p>
+        </div>
+        <div class="post-comments">
+          <p>
+            <span class="bold">vincey1853</span> just took a few mushrooms lol
+          </p>
+        </div>
+      </div>
+    </section>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

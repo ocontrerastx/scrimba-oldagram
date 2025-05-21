@@ -1,4 +1,74 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+}
+
+p {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+#logo {
+   height: 34px; 
+}
+
+section {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.avatar {
+    height: 34px;
+    border-radius: 50%;
+}
+
+.post-author {
+    padding: 10px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.author-name {
+    font-weight: 700;
+}
+
+.author-location {
+    font-size: 12px;
+}
+
+.post-image {
+    display: block;
+    height: 375px;
+}
+
+.post-body {
+    padding: 20px 10px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.post-actions img {
+    width: 23px;
+}
+
+.post-metrics {
+    font-weight: 700;
+    padding: 12px 0;
 }
