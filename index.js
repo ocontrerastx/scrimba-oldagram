@@ -68,7 +68,6 @@ function renderPosts (posts) {
 
     postList += postSection
 
-    console.log(postSection)
   }
 
   main.innerHTML = postList
