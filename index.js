@@ -51,9 +51,9 @@ function renderPosts (posts) {
 
       <div class="post-body">
         <div class="post-actions">
-          <img src="/images/icon-heart.png" alt="" />
-          <img src="/images/icon-comment.png" alt="" />
-          <img src="/images/icon-dm.png" alt="" />
+          <img src="images/icon-heart.png" alt="" />
+          <img src="images/icon-comment.png" alt="" />
+          <img src="images/icon-dm.png" alt="" />
         </div>
         <div class="post-metrics">
           <p>${posts[i].likes} Likes</p>
