@@ -28,27 +28,25 @@ const posts = [
     }
 ]
 
-let main = document.querySelector("main")
+const main = document.querySelector("main")
 
-let postContent = document.createElement('section')
-postContent.classList.add('post-content')
-let postAuthorDiv = document.createElement('div')
-postAuthorDiv.classList.add('post-author')
+function renderPosts (posts) {
 
-main.append(postContent)
+  let postList = ''
 
-let postSection = `
+  for (i = 0; i < posts.length; i++) {
+    let postSection = `
     <section class="post-content">
       <div class="post-author">
-        <img class="avatar" src="${posts[0].avatar}" alt="" />
+        <img class="avatar" src="${posts[i].avatar}" alt="" />
         <div class="post-author-details">
-          <p class="post-author-name">${posts[0].name}</p>
-          <p class="post-author-location">${posts[0].location}</p>
+          <p class="post-author-name">${posts[i].name}</p>
+          <p class="post-author-location">${posts[i].location}</p>
         </div>
       </div>
 
       <div class="post-img">
-        <img src="${posts[0].post}" alt="" class="post-image" />
+        <img src="${posts[i].post}" alt="" class="post-image" />
       </div>
 
       <div class="post-body">
@@ -58,14 +56,22 @@ let postSection = `
           <img src="/images/icon-dm.png" alt="" />
         </div>
         <div class="post-metrics">
-          <p>${posts[0].likes}</p>
+          <p>${posts[i].likes} Likes</p>
         </div>
         <div class="post-comments">
           <p>
-            <span class="bold">${posts[0].username}</span> ${posts[0].comment}
+            <span class="bold">${posts[i].username}</span> ${posts[i].comment}
           </p>
         </div>
       </div>
     </section>`
 
-main.innerHTML = postSection
+    postList += postSection
+
+    console.log(postSection)
+  }
+
+  main.innerHTML = postList
+}
+
+renderPosts(posts)
