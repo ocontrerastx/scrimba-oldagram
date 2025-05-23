@@ -42,11 +42,11 @@ section {
     align-items: center;
 }
 
-.author-name {
+.post-author-name {
     font-weight: 700;
 }
 
-.author-location {
+.post-author-location {
     font-size: 12px;
 }
 
