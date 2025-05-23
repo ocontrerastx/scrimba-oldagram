@@ -64,8 +64,15 @@ section {
     gap: 20px;
 }
 
+.post-actions-button:hover,
+.post-actions-button:focus {
+    opacity: 50%;
+    cursor: pointer;
+}
+
 .post-actions img {
     width: 23px;
+    display: block;
 }
 
 .post-metrics {

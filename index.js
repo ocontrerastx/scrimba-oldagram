@@ -51,9 +51,15 @@ function renderPosts (posts) {
 
       <div class="post-body">
         <div class="post-actions">
-          <img src="images/icon-heart.png" alt="" />
-          <img src="images/icon-comment.png" alt="" />
-          <img src="images/icon-dm.png" alt="" />
+          <div class="post-actions-button" role="button">
+            <img src="images/icon-heart.png" alt="Heart shaped icon" />
+          </div>
+          <div class="post-actions-button" role="button">
+            <img src="images/icon-comment.png" alt="Comment bubble icon" />
+          </div>
+          <div class="post-actions-button" role="button">
+            <img src="images/icon-dm.png" alt="Message icon" />
+          </div>
         </div>
         <div class="post-metrics">
           <p>${posts[i].likes} Likes</p>
